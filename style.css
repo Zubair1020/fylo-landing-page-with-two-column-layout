@@ -1,0 +1,563 @@
+@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@400;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans&display=swap');
+
+/* *************Root Styel***************** */
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+body {
+  min-height: 100vh;
+  text-rendering: optimizeSpeed;
+  line-height: 1.5;
+  font-family: var(--FontF-body);
+}
+
+body,
+h1,
+h2,
+h3,
+h4,
+p,
+figure,
+blockquote,
+dl,
+dd {
+  margin: 0;
+  padding: 0;
+}
+
+img,
+picture {
+  max-width: 100%;
+  display: block;
+}
+
+ul,
+ol {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+}
+
+/* *********Variable********* */
+
+:root {
+
+  --Very-Dark-Blue: hsl(243, 87%, 12%);
+  --Desaturated-Blue: hsl(238, 22%, 44%);
+  --Bright-Blue: hsl(224, 93%, 58%);
+  --Moderate-Cyan: hsl(170, 45%, 43%);
+  --Light-Grayish-Blue: hsl(240, 75%, 98%);
+  --Light-Gray: hsl(0, 0%, 75%);
+  --White: hsl(0, 0%, 100%);
+
+  --FontF-body: 'Open Sans', sans-serif;
+  --FontF-h1_h6-cta-header-nav: 'Raleway', sans-serif;
+
+  --Font-bold: 700;
+  --Font-regular: 400;
+}
+
+/* *********Custom Class Style************* */
+
+.flex {
+  display: flex;
+}
+
+.i-center {
+  align-items: center;
+}
+
+h1,
+h2,
+h3,
+h4 {
+  font-weight: var(--Font-bold);
+  font-family: var(--FontF-h1_h6-cta-header-nav);
+}
+
+/* *********Nav Section******** */
+
+.nav-container {
+  font-family: var(--FontF-h1_h6-cta-header-nav);
+  padding: 3em 3em 6em 3em;
+}
+
+.logo {
+  margin-right: auto;
+  margin-left: 0;
+}
+
+nav a {
+  color: var(--Desaturated-Blue);
+  font-weight: var(--Font-bold);
+  font-size: .96rem;
+  padding: 0 1em;
+}
+
+/* *********Banner Section********** */
+
+.banner {
+  padding-left: 3em;
+}
+
+.banner-row1 {
+  padding-right: 7em;
+}
+
+.banner h1 {
+  font-size: 2.4rem;
+}
+
+.banner p {
+  font-size: 1.05rem;
+  margin: 1em 0 1em;
+  color: var(--Very-Dark-Blue);
+}
+
+.banner input {
+  border: 2px solid var(--Light-Gray);
+  border-radius: 3px;
+  font-family: var(--Font-regular);
+  padding: .8em 10em .7em 1em;
+  margin-right: 1em;
+  transition: transform 200ms, box-shadow;
+}
+
+.banner button {
+  background-color: var(--Bright-Blue);
+  border: none;
+  border-radius: 3px;
+  box-shadow: 2px 5px 10px rgba(0, 0, 0, 0.17);
+  color: var(--White);
+  padding: 1.05em 3em;
+  transition: transform 200ms, box-shadow;
+}
+
+/* **********Feature Section************ */
+
+.carvebg {
+  max-height: fit-content;
+  margin-top: 10em;
+}
+
+.feature {
+  background: var(--Light-Grayish-Blue);
+  padding: 0 0 8em 3em;
+}
+
+.feature h2 {
+  font-size: 2.3rem;
+}
+
+.freature-datil {
+  margin: 2em 4em 1.5em 0;
+}
+
+.freature-datil p {
+  margin-top: 1em;
+  font-size: 1.07rem;
+  color: var(--Very-Dark-Blue);
+}
+
+.see-more {
+  flex-direction: row;
+}
+
+.see-more-link {
+  color: var(--Moderate-Cyan);
+  border-bottom: 1px solid;
+}
+
+.feature-row1 a img {
+  margin-left: .5em;
+}
+
+.comment-box {
+  background: var(--White) url("images/icon-quotes.svg");
+  background-repeat: no-repeat;
+  background-position: 2em .9em;
+  border-radius: 5px;
+  box-shadow: 0 5px 10px 1px rgba(0, 0, 0, 0.158);
+  flex-direction: column;
+  font-size: .95rem;
+  max-width: 24em;
+  margin-top: 3em;
+  padding: 2em .83em 2em 2em;
+  transition: transform 350ms, box-shadow;
+}
+
+.avarter-box {
+  margin: 1.2em 5em 0 0;
+}
+
+.avarter-box img {
+  border-radius: 100%;
+  width: 12%;
+  margin-right: 1em;
+}
+
+.avarter-box h4 {
+  font-size: .9rem;
+}
+
+.avarter-box h4 a {
+  color: var(--Very-Dark-Blue);
+}
+
+.avarter-box p {
+  font-size: .7rem;
+}
+
+/* ************Sign In Secton********** */
+
+.signIn {
+  background-color: var(--Desaturated-Blue);
+  padding: 6em 5em 5em 3em;
+  line-height: 1.6;
+}
+
+.signIn-row1 {
+  margin-right: 15em;
+}
+
+.signIn h3 {
+  color: var(--Light-Grayish-Blue);
+  font-family: var(--FontF-h1_h6-cta-header-nav);
+  letter-spacing: 1.09px;
+  font-size: 2rem;
+  margin-bottom: .3em;
+}
+
+.signIn p {
+  color: var(--Light-Gray);
+}
+
+.signIn input {
+  border-style: none;
+  border-radius: 3px;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.219);
+  padding: 1em 16em 1em 1.5em;
+  margin-bottom: 1.5em;
+}
+
+.signIn input::placeholder {
+  color: var(--Light-Gray);
+}
+
+.signIn button {
+  color: var(--White);
+  background-color: var(--Bright-Blue);
+  border-style: none;
+  border-radius: 3px;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.219);
+  padding: 1em 2.5em;
+}
+
+/* ************Footer Section***************** */
+
+footer {
+  background-color: var(--Very-Dark-Blue);
+  color: var(--Light-Gray);
+  font-size: .9rem;
+  padding: 5em 0 2em;
+}
+
+.footer-logo {
+  margin: 0 0 1em 2.5em
+}
+
+.footer-container 
+.ul2,
+.ul3,
+.ul4 {
+  margin: 0 auto;
+}
+
+.footer-container li {
+  padding-bottom: 1em;
+}
+
+.ul1 {
+  margin: 0 0 .5em 0;
+}
+
+.ul1 li img {
+  margin-right: 1em;
+}
+
+.ul2 .ul3,
+a {
+  color: var(--Light-Gray);
+}
+
+.ul4 li {
+  padding: .5em;
+}
+
+.ul4 i {
+  border: 1px solid var(--White);
+  border-radius: 100%;
+  padding: .5em;
+  width: 100%;
+}
+
+.ul4 .fb {
+  padding: .5em .6em;
+}
+
+
+/* *************Hover and Active Section**************** */
+
+nav a:hover {
+  color: var(--Bright-Blue);
+}
+
+button:active {
+  background: rgba(22, 76, 224, 0.568);
+}
+
+footer a:hover {
+  color: var(--Desaturated-Blue);
+}
+
+footer i:hover {
+  color: rgb(109, 143, 236);
+  border-color: rgb(109, 143, 236);
+}
+
+.see-more-link:hover {
+  color: hsl(170, 70%, 55%);
+}
+
+.see-more-link:active {
+  color: hsla(170, 45%, 43%, 0.527);
+}
+
+.avarter-box h4 a:hover {
+  color: rgb(111, 206, 212);
+}
+
+.avarter-box h4 a:active {
+  color: aqua;
+}
+
+.comment-box:hover {
+  transform: scale(1.05);
+  box-shadow: 0 15px 60px rgba(0, 0, 0, 0.253);
+}
+
+.banner button:hover {
+  transform: scale(1.05);
+  box-shadow: 1px 10px 20px rgba(0, 0, 0, 0.158);
+}
+
+.banner input:hover {
+  transform: scale(1.05);
+  box-shadow: 1px 10px 20px rgba(0, 0, 0, 0.158);
+}
+
+/* *********@MIDAQUREY********** */
+
+@media(max-width: 1132px) {
+  .banner button {
+    margin-top: 1em;
+    padding: .8em 9.3em .8em;
+  }
+
+  .banner button:hover {
+    transform: scale(1.02);
+    box-shadow: 1px 10px 20px rgba(0, 0, 0, 0.158);
+  }
+
+  .signIn-row1 {
+    margin-right: 5em;
+  }
+
+}
+
+@media(max-width: 832px) {
+  .banner {
+    flex-direction: column-reverse;
+    padding: 0;
+    margin: 0;
+  }
+
+  .feature {
+    flex-direction: column-reverse;
+  }
+
+  .banner-row1 {
+    margin: 1em 3em;
+    padding: 0;
+  }
+
+  .signIn input {
+    padding: 1em 1.6em;
+  }
+
+}
+
+@media (max-width: 600px) {
+  nav a {
+    font-size: .8rem;
+    padding: 1em .5em;
+  }
+
+  .logo {
+    max-width: 40%;
+  }
+
+  .signIn {
+    flex-wrap: wrap;
+    padding-right: 0;
+  }
+
+  .signIn-row2 {
+    margin-top: 1em;
+  }
+
+  .footer-container {
+    flex-wrap: wrap;
+  }
+}
+
+
+@media(max-width: 450px) {
+  .nav-container {
+    padding: 1em .5em;
+  }
+
+  nav a {
+    font-size: .78rem;
+    padding: 0 .3em;
+  }
+
+  .logo {
+    max-width: 30%;
+  }
+
+  .banner {
+    text-align: center;
+    padding: 0;
+  }
+
+  .banner-row1 {
+    margin: 0;
+  }
+
+  .banner-row1 h1 {
+    font-size: 1.5rem;
+    padding: 0 1em;
+  }
+
+  .banner p {
+    padding: 0 2em 0;
+  }
+
+  .banner input {
+    margin-right: 0;
+  }
+
+  .feature {
+    margin: 0;
+    padding: 0;
+  }
+
+  .feature h2 {
+    font-size: 1.1rem;
+    margin-top: 1.5em;
+    text-align: center;
+  }
+
+  .freature-datil {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    padding: 0 1em 1em 2em;
+    margin: 0;
+    text-align: left;
+  }
+
+  .freature-datil p {
+    font-size: 1rem;
+  }
+
+  .see-more {
+    justify-content: center;
+  }
+
+  .comment-box {
+    max-width: 20em;
+    margin: 1em auto;
+  }
+
+  .comment-box>p {
+    font-size: .9rem;
+  }
+
+  .signIn {
+    flex-direction: column;
+    padding: 0;
+    padding: 2em 1em;
+    text-align: center;
+  }
+
+  .signIn-row1 {
+    margin: 0;
+    padding: 0 .5em;
+  }
+
+  br {
+    display: none;
+  }
+
+  .signIn-row1 h3 {
+    font-size: 1.5rem;
+    padding: 0;
+    margin: 0;
+  }
+
+  .signIn p {
+    font-size: .9rem;
+  }
+
+  .signIn input {
+    padding: 1em 5em 1em;
+    margin: 1em auto;
+  }
+
+  .signIn button {
+    padding: 1em 6em;
+    margin: auto;
+  }
+
+  .footer-container {
+    flex-direction: column;
+  }
+
+  .footer-container .ul2,
+  .ul3,
+  .ul4 {
+    margin: 0;
+  }
+
+  .ul1 {
+    margin-bottom: 2em;
+  }
+
+  .ul3 {
+    margin-top: 2em;
+  }
+
+  .ul4 {
+    margin: 1em auto;
+  }
+
+}
